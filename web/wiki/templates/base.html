@@ -1,0 +1,25 @@
+$def with(page)
+
+<html>
+
+<head>
+    <title>
+    $if page.has_key('title'):
+        $page.title
+    $else:
+        My Wiki
+    </title>
+</head>
+
+<body>
+
+    <ul>
+    
+        <li><a href="/">Home</a></li>
+        <li><a href="/new">New Page</a></li>
+    </ul>
+
+$:page
+
+</body>
+</html>
